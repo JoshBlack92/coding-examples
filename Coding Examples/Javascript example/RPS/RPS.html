@@ -1,0 +1,75 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="RPS.css">
+    <script src="RPS.js" defer></script>
+</head>
+
+<main>
+    <section id="player">
+      <h2>Choose your Move:</h2>
+
+      <div class="player img-div">
+        <img src="images/rock.png" alt="rock">
+        <button type="button" onclick="setRock()">Rock</button>
+      </div>
+      <div class="player img-div">
+        <img src="images/paper.png" alt="paper">
+        <button type="button" onclick="setPaper()">Paper</button>
+      </div>
+      <div class="player img-div">
+        <img src="images/scissors.png" alt="scissors">
+        <button type="button" onclick="setScissors()">Scissors</button>
+      </div>
+
+      <div class="info-div hide">
+        <div><span></span> beats <span></span></div>
+        <div><span></span> beats <span></span></div>
+      </div>
+    </section>
+
+    <section id="computer">
+      <h2>Computer: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Player: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Result:</h2>
+      <div class="img-div">
+        <img id="PImg" src="images/question.png" alt="waiting for computer move">
+        <img id="eImg" src="images/question.png" alt="waiting for computer move">
+        <img id="RImg" src="images/question.png" alt="waiting for results">
+      </div>
+      <h2></h2>
+    </section>
+
+    <section id="results">
+        
+      <p class="multyT" id="WAL" style="font-size: 50px;"></p>
+      <div class="hide">
+        <div class="choice">
+          <span>You Chose: </span>
+          <span id="player-choice"></span>
+        </div>
+
+        <div class="choice">
+          <span>Computer Chose: </span>
+          <span id="computer-choice"></span>
+        </div>
+
+        <div class="choice">
+          <span>Result: </span>
+          <span id="result"></span>
+        </div>
+
+        <div class="summary">
+          <h3>Score</h3>
+          <div class="player-score">
+            <span>Player: </span>
+            <span class="score"></span>
+          </div>
+          <div class="computer-score">
+            <span>Computer: </span>
+            <span class="score"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+  </main>
